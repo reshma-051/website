@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: static-site
+  name: website
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: static-site
+      app: website
   template:
     metadata:
       labels:
-        app: static-site
+        app: website
     spec:
       containers:
-      - name: static-site
+      - name: website
         image: resh5/static_website:latest
         imagePullPolicy: Always
         ports:
