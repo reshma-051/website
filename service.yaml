@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: static-website-service
+  name: website-service
 spec:
   selector:
-    app: static-website
+    app: website
   ports:
     - protocol: TCP
       port: 80
