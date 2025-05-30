@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: website
-        image: resh5/static_website:latest
+        image: resh5/website:latest
         imagePullPolicy: Always
         ports:
         - containerPort: 80
